@@ -25,10 +25,27 @@ namespace DAM_Leccion_AOE
         }
 
         public void Ejecutar()
+
         {
-            PersonaModel personaModel = new PersonaModel();
-            personaModel.Nombre = "Hola aqui estoy";
-            txtNombre.Text = "Hola aqui estoy";
+            PersonaModel personaModel = new PersonaModel()
+            {
+                Nombre = "Hola aqui estoy",
+
+            };
+
+            BindingContext = personaModel.Nombre;
+
+            Binding personaBinding = new Binding ();
+            personaBinding.Source = personaModel;
+            personaBinding.Path = "Nombre";
+            txtNombre.SetBinding(Entry.TextProperty, personaBinding);
+
+            
+                //PersonaModel personaModel = new PersonaModel();
+                //personaModel.Nombre = "Hola aqui estoy";
+                //txtNombre.Text = "Hola aqui estoy";
+            
+
         }
 
         private void btnAceptar_Clicked(object sender, EventArgs e)
