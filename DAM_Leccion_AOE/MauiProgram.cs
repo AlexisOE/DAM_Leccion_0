@@ -16,7 +16,8 @@ namespace DAM_Leccion_AOE
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.ConfigureMauiHandlers(handlers => { });
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

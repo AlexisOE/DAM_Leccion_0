@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DAM_Leccion_AOE.MainPage"
-             xmlns:Leccion2="clr-namespace:DAM_Leccion_AOE">
+             xmlns:Leccion2="clr-namespace:DAM_Leccion_AOE.Model">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -15,7 +15,7 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
+                Source="login.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
@@ -37,18 +37,27 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+
             <Entry
-                x:Name="txtNombre"
-                Text="{Binding Nombre}"
                 Placeholder="Escribe un nombre"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand"
+                x:Name= "txtNombre"
+                Text="{Binding Nombre}"
+                />
+
+            <Entry
+                Placeholder="Coloque su numero de telefono"
+                HorizontalOptions="FillAndExpand"
+                x:Name= "txtNumero"
+                />
+
             <Button
                 x:Name="btnAceptar"
+                Text="Aceptar"
                 Clicked="btnAceptar_Clicked"
-                HorizontalOptions="CenterAndExpand"
-                Text="Aceptar" />
-            
-                
+                HorizontalOptions="CenterAndExpand" />
+
         </VerticalStackLayout>
     </ScrollView>
 
