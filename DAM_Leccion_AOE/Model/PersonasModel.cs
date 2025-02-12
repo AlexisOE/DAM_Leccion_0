@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAM_Leccion_AOE.Model
 {
-    class PersonaModel :INotifyPropertyChanged
+    class PersonasModel :INotifyPropertyChanged
     {
         //Atributos
         private string? nombre;
@@ -57,13 +57,6 @@ namespace DAM_Leccion_AOE.Model
             }
 
         }
-
-
-
-
-
-
-
 
 
 

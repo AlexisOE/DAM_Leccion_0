@@ -74,10 +74,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModel\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiSplashScreen Include="Resources\Splash\imagen2.png" />
 	</ItemGroup>
 
