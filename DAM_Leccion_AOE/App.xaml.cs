@@ -9,7 +9,10 @@ namespace DAM_Leccion_AOE
         public App()
         {
             InitializeComponent();
-            MainPage = new AppShell();
+
+            //MainPage = new AppShell();
+
+            MainPage = new PersonasView();
         }
 
        
