@@ -31,7 +31,7 @@ namespace DAM_Leccion_AOE
         {
             personaModel = new PersonaModel()
             {
-                Nombre = "Hola Aqui Estoy :)",
+                Nombre = "",
             };
 
             BindingContext = personaModel;
@@ -53,8 +53,10 @@ namespace DAM_Leccion_AOE
         //Evento guardar
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
-            // DisplayAlert("Asistente del sistema", "Se ha guardado el registro en la BD", "Aceptar");
-            personaModel.Nombre = "Alondra Montalvo";
+            DisplayAlert("Asistente del sistema", "Se ha guardado el registro en la BD", "Aceptar");
+            personaModel.Nombre = "Alexis";
+            personaModel.Apellido = "Olvera";
+            personaModel.Edad = "21";
         }
     }
 

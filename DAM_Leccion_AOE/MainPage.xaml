@@ -21,40 +21,50 @@
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
 
             <Label
-                Text="Hello, World!"
+                Text="FALCONS"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Text="BIENVENIDOS A MI APLICACIÓN"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Presioname..."
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
 
 
             <Entry
-                Placeholder="Escribe un nombre"
+                Placeholder="Nombre"
                 HorizontalOptions="FillAndExpand"
                 x:Name= "txtNombre"
                 Text="{Binding Nombre}"
                 />
 
             <Entry
-                Placeholder="Coloque su numero de telefono"
+                Placeholder="Apellido"
                 HorizontalOptions="FillAndExpand"
-                x:Name= "txtNumero"
+                x:Name= "txtApellido"
+                Text="{Binding Apellido}"
                 />
+
+            <Entry
+                Placeholder="Edad"
+                HorizontalOptions="FillAndExpand"
+                x:Name= "txtEdad"
+                Text="{Binding Edad}"
+    />
+
+            
 
             <Button
                 x:Name="btnAceptar"
-                Text="Aceptar"
+                Text="Registrar"
                 Clicked="btnAceptar_Clicked"
                 HorizontalOptions="CenterAndExpand" />
 
